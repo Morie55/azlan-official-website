@@ -1,26 +1,163 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* AZLAN Design System Color Palette */
+  --color-on-background: #1a1a2e;
+  --color-background: #fcf8ff;
+  --color-on-secondary: #ffffff;
+  --color-inverse-on-surface: #f2efff;
+  --color-on-error-container: #93000a;
+  --color-surface-variant: #e2e0fc;
+  --color-on-primary: #ffffff;
+  --color-on-primary-fixed: #001b3d;
+  --color-outline: #737781;
+  --color-surface-container-lowest: #ffffff;
+  --color-secondary-fixed: #d1e4ff;
+  --color-on-tertiary-fixed: #2f1500;
+  --color-primary-fixed-dim: #a9c7ff;
+  --color-tertiary-fixed: #ffdcc3;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-tertiary-fixed-dim: #ffb77e;
+  --color-surface-container-low: #f5f2ff;
+  --color-on-tertiary-fixed-variant: #6e3900;
+  --color-on-tertiary-container: #ffae6b;
+  --color-on-surface: #1a1a2e;
+  --color-tertiary: #582c00;
+  --color-surface-tint: #335f9d;
+  --color-inverse-surface: #2f2e43;
+  --color-error: #ba1a1a;
+  --color-on-primary-container: #9ec1ff;
+  --color-surface-container-highest: #e2e0fc;
+  --color-primary-fixed: #d6e3ff;
+  --color-surface-bright: #fcf8ff;
+  --color-on-tertiary: #ffffff;
+  --color-outline-variant: #c3c6d2;
+  --color-on-secondary-container: #004a7d;
+  --color-on-secondary-fixed-variant: #00497c;
+  --color-tertiary-container: #793f00;
+  --color-secondary: #0b61a1;
+  --color-on-secondary-fixed: #001d36;
+  --color-primary: #00376f;
+  --color-secondary-fixed-dim: #9ecaff;
+  --color-surface-container: #efecff;
+  --color-surface-dim: #dad7f3;
+  --color-primary-container: #1f4e8c;
+  --color-on-primary-fixed-variant: #144684;
+  --color-inverse-primary: #a9c7ff;
+  --color-secondary-container: #7cbaff;
+  --color-surface: #fcf8ff;
+  --color-on-surface-variant: #434750;
+  --color-surface-container-high: #e8e5ff;
+  --color-gold-accent: #F5C842;
+  --color-accent: #2e75b6;
+
+  /* Custom Spacing Base Unit (8px basis) */
+  --spacing-unit-xs: 4px;
+  --spacing-unit-sm: 8px;
+  --spacing-unit-md: 16px;
+  --spacing-unit-lg: 32px;
+  --spacing-unit-xl: 64px;
+  --spacing-margin-mobile: 16px;
+  --spacing-margin-desktop: 64px;
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1280px;
+
+  /* Border Radii */
+  --radius-sm: 0.125rem;
+  --radius-DEFAULT: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* Font Families */
+  --font-sans: var(--font-inter), sans-serif;
+  --font-display: var(--font-plus-jakarta-sans), sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Material Symbols configuration */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(31, 78, 140, 0.1);
+  box-shadow: 0px 4px 20px rgba(26, 26, 46, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.glass-card:hover {
+  border-color: rgba(245, 200, 66, 0.5);
+  box-shadow: 0px 8px 30px rgba(26, 26, 46, 0.08);
 }
+
+/* Lion Watermark pattern */
+.lion-watermark {
+  position: relative;
+  overflow: hidden;
+}
+
+.lion-watermark::after {
+  content: 'cloud_done'; /* Fallback geometric pattern */
+  font-family: 'Material Symbols Outlined';
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  font-size: 96px;
+  opacity: 0.03;
+  pointer-events: none;
+  transform: rotate(-15deg);
+  transition: opacity 0.3s ease;
+}
+
+.lion-watermark:hover::after {
+  opacity: 0.06;
+}
+
+/* West African textile radial pattern */
+.pattern-overlay {
+  background-image: radial-gradient(#F5C842 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+  opacity: 0.1;
+}
+
+/* Custom animations */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.pulse-glow {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 35s linear infinite;
+}
+
+/* Hide scrollbars but keep functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
