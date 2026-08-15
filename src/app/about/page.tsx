@@ -45,25 +45,25 @@ export default function AboutPage() {
       name: "Morie Keita",
       role: "CEO",
       stakeholder: "55%",
-      img: "/morie-keita.jpg",
+      img: "/Morie Keita.png",
     },
     {
       name: "Lansana Kaba",
       role: "CTO",
       stakeholder: "30%",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDzgfHUXCRAgEo3Y-R8YX4pf5nmt6HhYFA4kWJ7QRthMX8l9_q4gll59BahTgksTOOrXG7LrN93BxUuCQiktq2Pwll91CVIfAKYEsbkvfNUDxYg27NKqwyZZYScxIoWTDpFeuUKd4EMviKScyC4htOJW2sVPv0z9AFmDSN7MbDhMLQs3CdM48Evc-Xj71LQB7cEsNRZ5jiZzItSwbUxyy9EG4R20qZtHsnVbe0SlI6pBdR-UMkfy1KZvL-QAROjtCMTr2KvOBk50qzi",
+      img: "/Lansana Kaba.jpeg",
     },
     {
-      name: "Joseph Abu Koroma",
+      name: "Joseph A. Koroma",
       role: "COO",
       stakeholder: "8%",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAqABgxOlyXasNrjjo12QmmCX6ZRVg5X8cJznraNZRzQvQXnYz6ZKWih48v7QbrgvBQH_eVd4N4eJk_t2iJzKopVFh8bsr35ucu_joBNLeXeCesK2IHlxUz9UiPAheMVXXcRO_GsA8Yyttm74oSpF3xHD5ApyyoV6fE2hBoT6N7aLvdpGv6IBm0X7OMFhBtkqf0rF3zurH0s9ayOOoKsPd63yowNCDWxEwLiHzqlfE7PBbhS1j3NpntuR237ImG_WAabC7gTCjgLztb",
+      img: "/Joseph A. Koroma.png",
     },
     {
       name: "Abdulai Kamara",
       role: "Marketing Director",
       stakeholder: "7%",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAXDmcF7cfNLdhDCDlaVKAZ_LikAhzvGUQoNKjxUJXo6zFyeDKLuHL9Xq2v0lBJ-caDxK6xP5uSMDDBIsOucnNjJeN-n7eIo64kvMUwzdG0GvMlvoqYd232IH5h1drVQqfR7tYltJT9dbIVfhqaUBm4Lmg5leUgaWlwlWMxhX2jHibUAxYsECennKD9gGbE0BoCT0y4GtwhjBgDwxzCLUWlKPV82mzMbzf0-TyNdSPdwDXHzIcq3NZTM0gfS6PTBp9epnzQ3V17AEgG",
+      img: "/Abdulai Kamara.png",
     },
   ];
 

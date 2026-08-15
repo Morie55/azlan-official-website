@@ -35,34 +35,34 @@ export default function HomePage() {
     {
       name: "Morie Keita",
       role: "Managing Director",
-      img: "/morie-keita.jpg",
+      img: "/Morie Keita.png",
     },
     {
       name: "Lansana Kaba",
       role: "Technical Director",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCogd186oGGfdd6_GiV8kyRg-piYkjqcMAAh45oOekL8sPtLqTZrrAzZhK35j4pmCTHuqDRN1fmNfuK8NpTb2CEJ9nS19tRjUKujHQUoPTM_fJcTNja0rIYh1GNYqVOiiQ8bT90wOSJXAtsRmL9uqNQo3SJyWk6YxxhM43df9cYVXAcHr6nNu7tGG72FUhrMelr_DbDubHiHsr4E-qX_UnArI8e_O_loxgfJgODBJWoDoqt2n_shxsokxwtZB_0MgWwJko4fcH4tarl",
+      img: "/Lansana Kaba.jpeg",
     },
     {
-      name: "Joseph Koroma",
+      name: "Joseph A. Koroma",
       role: "Operations Lead",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCRYVMPMR4klfvbxKAm8d06ufJeSMb1qFRiYc2mS_5BT6POYA_Vtq7c_z8TKgLW9rIiHX8o-e8a3F2WhhKVXXM2bJNIiyo0esz1eWV-NOa9DD2qBACLbTGSdkgZc369eYxkNCg6meTnJbvRLYealXaJGIOzYRH9Kk9tiYUsaCWG3jYQks89Hnu57vaT7UZDyIQzGIgpR7DxnXJrFV8SBM-ujAdCmkpgGkgFkfKdOyW5fkHt5DwyzFnH9U9KlqMNqbm4TaNWWiKlPLC3",
+      img: "/Joseph A. Koroma.png",
     },
     {
       name: "Abdulai Kamara",
       role: "Product Strategy",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCkV02J1ZexL1mRHBcycekMV8pTxWZCho92KFM9Yx7tOGf-ALfdoirgXGvLTXJf39IA8yHMXXT11Nh3Z0JjT3EwasWC4IHMp97x9rlR6tIUaI1d8ajBrWn16dWS3ybbFqOnvaAmPYiepK1B-aLF2k9CN3X7Pil906bGtJsAdE5b2nmaAlG2CVgh8XElIJ3aEb3AiyiiJc-Uau0G3Kiju-SSbsQDeJbQ3XWJRbWXY-UIw-T5w01hWSiJt_BMvRfHqvHMX0x5bPNgIyqN",
+      img: "/Abdulai Kamara.png",
     },
   ];
 
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Header Section */}
-      <header className="relative min-h-[85vh] flex items-center py-unit-xl overflow-hidden">
+      <header className="relative min-h-[85vh] flex items-center py-unit-lg md:py-unit-xl overflow-hidden">
         {/* WebGL Textile Shader Background */}
         <TextileShader />
 
         {/* Content Wrapper */}
-        <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full grid grid-cols-1 md:grid-cols-12 gap-gutter pt-8">
+        <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full grid grid-cols-1 md:grid-cols-12 gap-gutter pt-20 md:pt-8">
           <div className="md:col-span-8 flex flex-col justify-center text-left">
             <div className="flex items-center gap-2 mb-unit-md">
               <span className="h-[2px] w-12 bg-gold-accent"></span>
@@ -70,25 +70,25 @@ export default function HomePage() {
                 Built in Freetown. Built for Africa.
               </span>
             </div>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-on-primary md:text-on-background mb-unit-lg leading-tight tracking-tight">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-600 mb-unit-lg leading-tight tracking-tight">
               Sierra Leone&apos;s leading technology company —{" "}
-              <span className="text-gold-accent md:text-primary">powering businesses</span> with
+              <span className="text-yellow-400">powering businesses</span> with
               world-class digital products.
             </h1>
-            <p className="font-sans text-lg md:text-xl text-background/80 md:text-on-surface-variant mb-unit-xl max-w-2xl leading-relaxed">
+            <p className="font-sans text-base md:text-lg lg:text-xl text-white mb-unit-xl max-w-2xl leading-relaxed">
               We bridge the digital divide by creating high-performance tools specifically designed
               for the African context, ensuring resilience, speed, and local integration.
             </p>
-            <div className="flex flex-wrap gap-unit-md">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-unit-md">
               <Link
                 href="/products"
-                className="bg-primary hover:bg-primary-container text-on-primary px-unit-xl py-4 font-display font-semibold text-[14px] uppercase tracking-wider rounded-md shadow-lg active:scale-95 transition-all"
+                className="bg-primary hover:bg-primary-container text-on-primary px-unit-xl py-4 font-display font-semibold text-[14px] uppercase tracking-wider rounded-md shadow-lg active:scale-95 transition-all text-center sm:text-left"
               >
                 Explore Our Products
               </Link>
               <Link
                 href="/contact"
-                className="border-2 border-primary/20 md:border-primary text-white bg-primary/10 md:bg-transparent hover:bg-primary/5 px-unit-xl py-4 font-display font-semibold text-[14px] uppercase tracking-wider rounded-md active:scale-95 transition-all"
+                className="border-2 border-primary/20 md:border-primary text-yellow-400 bg-primary/10 md:bg-transparent hover:bg-primary/5 px-unit-xl py-4 font-display font-semibold text-[14px] uppercase tracking-wider rounded-md active:scale-95 transition-all text-center sm:text-left"
               >
                 Get in Touch
               </Link>
@@ -217,8 +217,8 @@ export default function HomePage() {
 
       {/* Why Azlan Value Bar */}
       <section className="py-unit-lg bg-primary">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop overflow-x-auto scrollbar-hide">
-          <div className="flex flex-nowrap md:flex-row justify-between items-center gap-unit-xl min-w-[900px] md:min-w-0">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-unit-md md:gap-unit-xl">
             {[
               { icon: "location_on", text: "Built for Sierra Leone" },
               { icon: "cloud_off", text: "Offline-First" },
@@ -227,10 +227,10 @@ export default function HomePage() {
               { icon: "verified", text: "Proven & Live" },
             ].map((v) => (
               <div key={v.text} className="flex items-center gap-unit-sm group">
-                <span className="material-symbols-outlined text-gold-accent text-xl group-hover:scale-110 transition-transform">
+                <span className="material-symbols-outlined text-gold-accent text-xl shrink-0 group-hover:scale-110 transition-transform">
                   {v.icon}
                 </span>
-                <span className="text-on-primary font-display text-label-caps uppercase tracking-wider font-semibold text-[13px]">
+                <span className="text-on-primary font-display uppercase tracking-wider font-semibold text-[12px] sm:text-[13px] leading-tight">
                   {v.text}
                 </span>
               </div>
@@ -240,7 +240,7 @@ export default function HomePage() {
       </section>
 
       {/* Team Leadership Section */}
-      <section className="py-unit-xl max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <section className="py-unit-lg md:py-unit-xl max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="text-center mb-unit-xl">
           <h2 className="font-display text-3xl font-extrabold text-white/90">Leadership Pride</h2>
           <p className="text-white/70 font-sans text-body-md mt-2">
@@ -248,10 +248,10 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-gutter gap-y-unit-lg">
           {team.map((t) => (
             <div key={t.name} className="text-center">
-              <div className="relative w-28 h-28 sm:w-32 sm:h-32 mx-auto mb-unit-md group">
+              <div className="relative w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto mb-unit-md group">
                 <div className="absolute inset-0 border-2 border-gold-accent rounded-full scale-105 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
                 <div className="w-full h-full rounded-full overflow-hidden border-2 border-outline-variant">
                   <img
@@ -278,7 +278,7 @@ export default function HomePage() {
         </div>
 
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center relative z-10">
-          <h2 className="font-display text-3xl md:text-4xl font-extrabold text-gold-accent mb-unit-md tracking-tight">
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-gold-accent mb-unit-md tracking-tight">
             Ready to grow your business with technology built for you?
           </h2>
           <p className="text-background/80 font-sans text-body-lg mb-unit-xl max-w-2xl mx-auto leading-relaxed">
