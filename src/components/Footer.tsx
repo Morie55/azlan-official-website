@@ -62,13 +62,13 @@ export const Footer: React.FC = () => {
               Legal
             </span>
             <Link
-              href="#"
+              href="/privacy"
               className="font-sans text-body-md text-background/80 dark:text-on-background/80 hover:text-[#F5C842] transition-colors duration-200"
             >
               Privacy Policy
             </Link>
             <Link
-              href="#"
+              href="/terms"
               className="font-sans text-body-md text-background/80 dark:text-on-background/80 hover:text-[#F5C842] transition-colors duration-200"
             >
               Terms of Service
