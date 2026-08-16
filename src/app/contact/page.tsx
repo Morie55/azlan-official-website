@@ -362,33 +362,29 @@ export default function ContactPage() {
           </div>
 
           <div className="w-full h-[380px] md:h-[420px] bg-surface-container-high rounded-2xl overflow-hidden shadow-sm border border-outline/10 relative">
-            <div
-              className="w-full h-full bg-cover bg-center"
-              style={{
-                backgroundImage:
-                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuB7fkm3mMSP7YEHU0V9275p3svLjEXRMEECoK-X-JE_lFPaxX2VIzz3zeOyd2PXMcXtIwvUoGyWsa2bxWMIaOBfGlmxJ3XasGoKlJqCF9-XqoqXEJ1rWEKB-lc60eqDw5trfiLhCXfrWimy-uOuzNCMBA_mIK7IZM9-i6d30JLqDUO67riizCrbfDDaHv0k7UScU9f8vQOlyh-VX4Zatzf4M56crEjcvVFKj-hE0uYKFplOCR7WUi5bzmSX1c2nZKTWBNNtjujOSu75')",
-              }}
-            >
-              <div className="absolute inset-0 bg-primary/15 backdrop-blur-[1px]" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-background/95 backdrop-blur-md px-unit-lg py-unit-md rounded-2xl shadow-2xl border border-outline/10 flex items-center gap-unit-md -translate-y-6">
-                  <span
-                    className="material-symbols-outlined text-gold-accent text-[40px] shrink-0"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    location_on
-                  </span>
-                  <div>
-                    <p className="font-display font-extrabold text-primary text-[15px] leading-tight">
-                      AZLAN (SL) LIMITED
-                    </p>
-                    <p className="font-sans text-xs text-on-surface-variant font-medium mt-0.5">
-                      7 Haja Nabie Street, Hill Station
-                    </p>
-                    <p className="font-sans text-xs text-on-surface-variant">
-                      Freetown, Sierra Leone
-                    </p>
-                  </div>
+            <iframe
+              title="AZLAN (SL) LIMITED — Hill Station, Freetown"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-13.2485%2C8.4695%2C-13.2085%2C8.4895&layer=mapnik&marker=8.4795%2C-13.2285"
+              className="w-full h-full border-0"
+              loading="lazy"
+              allowFullScreen
+            />
+            {/* Address card overlay */}
+            <div className="absolute bottom-unit-lg left-1/2 -translate-x-1/2 pointer-events-none">
+              <div className="bg-background/95 backdrop-blur-md px-unit-md py-unit-sm rounded-xl shadow-2xl border border-outline/10 flex items-center gap-unit-sm whitespace-nowrap">
+                <span
+                  className="material-symbols-outlined text-gold-accent text-[28px] shrink-0"
+                  style={{ fontVariationSettings: "'FILL' 1" }}
+                >
+                  location_on
+                </span>
+                <div>
+                  <p className="font-display font-extrabold text-primary text-[13px] leading-tight">
+                    AZLAN (SL) LIMITED
+                  </p>
+                  <p className="font-sans text-xs text-on-surface-variant mt-0.5">
+                    7 Haja Nabie Street, Hill Station, Freetown
+                  </p>
                 </div>
               </div>
             </div>
