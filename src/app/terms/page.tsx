@@ -43,7 +43,7 @@ export default function TermsOfServicePage() {
                 className="text-primary underline underline-offset-2 hover:text-gold-accent transition-colors"
               >
                 https://azlan-official-website.com
-              </a>{" "}
+              </a>
               (the &ldquo;Site&rdquo;), operated by AZLAN (SL) LIMITED, a private company limited
               by shares incorporated in the Republic of Sierra Leone under Registration No.
               SL230626AZLAN30773, with its registered office at 7 Haja Nabie Street, Hill Station,
