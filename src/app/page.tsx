@@ -54,6 +54,63 @@ export default function HomePage() {
     },
   ];
 
+  const reviews = [
+    {
+      name: "Fatmata Bangura",
+      role: "Owner, Bangura Provisions",
+      avatar: "FB",
+      color: "bg-amber-500",
+      rating: 5,
+      quote:
+        "JULA POS completely transformed how I run my shop. I can track stock in real-time even without internet — it's exactly what we needed in Freetown.",
+    },
+    {
+      name: "Ibrahim Sesay",
+      role: "CEO, Sesay Logistics Ltd",
+      avatar: "IS",
+      color: "bg-primary",
+      rating: 5,
+      quote:
+        "Jagaban Mobility solved a problem we'd struggled with for years. Our drivers are more organised, and our passengers actually trust the routes now.",
+    },
+    {
+      name: "Aminata Koroma",
+      role: "Co-founder, Salone Kitchen",
+      avatar: "AK",
+      color: "bg-emerald-600",
+      rating: 5,
+      quote:
+        "Tardem Eats helped us reach customers we never thought possible. Orders doubled in two months, and the integration with mobile money is seamless.",
+    },
+    {
+      name: "Mohamed Conteh",
+      role: "Director, Conteh & Sons Trading",
+      avatar: "MC",
+      color: "bg-rose-600",
+      rating: 5,
+      quote:
+        "The team at Azlan genuinely understands Sierra Leone. Their local support is outstanding — real people who respond fast and actually care.",
+    },
+    {
+      name: "Hawa Turay",
+      role: "Founder, SL Beauty Hub",
+      avatar: "HT",
+      color: "bg-violet-600",
+      rating: 5,
+      quote:
+        "StartUp SL gave my idea the structure and mentorship it desperately needed. I went from an idea on paper to a live product in under six months.",
+    },
+    {
+      name: "Samuel Kamara",
+      role: "Manager, Freetown Mall Annex",
+      avatar: "SK",
+      color: "bg-sky-600",
+      rating: 5,
+      quote:
+        "Switching to JULA POS was the best decision we made this year. The inventory reports alone have saved us hours every week.",
+    },
+  ];
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Header Section */}
@@ -267,6 +324,84 @@ export default function HomePage() {
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Customer Reviews Section */}
+      <section className="py-unit-xl bg-surface-container-lowest relative overflow-hidden">
+        {/* Background accent */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent pointer-events-none" />
+
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+          {/* Section Header */}
+          <div className="text-center mb-unit-xl">
+            <div className="flex items-center justify-center gap-2 mb-unit-sm">
+              <span className="h-[2px] w-8 bg-gold-accent" />
+              <span className="font-display text-label-caps text-gold-accent uppercase tracking-widest font-semibold text-[12px]">
+                Testimonials
+              </span>
+              <span className="h-[2px] w-8 bg-gold-accent" />
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold text-on-background">
+              Trusted by businesses across{" "}
+              <span className="text-gold-accent">Sierra Leone</span>
+            </h2>
+            <p className="text-on-surface-variant font-sans text-body-lg mt-3 max-w-xl mx-auto">
+              Real results from real businesses — see how Azlan&apos;s products are making a difference.
+            </p>
+          </div>
+
+          {/* Reviews Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+            {reviews.map((r) => (
+              <div
+                key={r.name}
+                className="glass-card p-unit-lg rounded-xl flex flex-col gap-unit-md hover:-translate-y-1 transition-all duration-300 group"
+              >
+                {/* Stars */}
+                <div className="flex gap-0.5">
+                  {Array.from({ length: r.rating }).map((_, i) => (
+                    <span key={i} className="text-gold-accent text-lg leading-none">★</span>
+                  ))}
+                </div>
+
+                {/* Quote */}
+                <blockquote className="font-sans text-body-md text-on-surface-variant leading-relaxed flex-grow">
+                  &ldquo;{r.quote}&rdquo;
+                </blockquote>
+
+                {/* Divider */}
+                <div className="h-px bg-outline/10" />
+
+                {/* Reviewer */}
+                <div className="flex items-center gap-unit-sm">
+                  <div
+                    className={`w-10 h-10 rounded-full ${r.color} flex items-center justify-center text-white font-display font-bold text-[13px] shrink-0`}
+                  >
+                    {r.avatar}
+                  </div>
+                  <div>
+                    <p className="font-display font-bold text-on-background text-[14px] leading-tight">{r.name}</p>
+                    <p className="font-sans text-[12px] text-on-surface-variant mt-0.5">{r.role}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Aggregate trust badge */}
+          <div className="mt-unit-xl flex flex-col sm:flex-row items-center justify-center gap-unit-md text-center">
+            <div className="flex gap-0.5">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <span key={i} className="text-gold-accent text-2xl">★</span>
+              ))}
+            </div>
+            <p className="font-sans text-on-surface-variant text-body-md">
+              <span className="font-display font-extrabold text-on-background text-xl">5.0</span>{" "}
+              average rating &nbsp;·&nbsp; Trusted by{" "}
+              <span className="font-semibold text-on-background">200+ businesses</span> in Sierra Leone
+            </p>
+          </div>
         </div>
       </section>
 
