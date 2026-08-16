@@ -70,7 +70,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-primary py-unit-xl lg:py-32 min-h-[40vh] flex items-center">
+      <section className="relative overflow-hidden bg-primary py-unit-lg md:py-unit-xl lg:py-32 min-h-[50vh] md:min-h-[40vh] flex items-center">
         {/* Render smooth WebGL Navy background shader */}
         <HeroShader />
 
@@ -82,7 +82,7 @@ export default function AboutPage() {
             <span className="font-display text-label-caps text-gold-accent uppercase tracking-widest font-semibold">
               Built in Freetown. Built for Africa.
             </span>
-            <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-on-primary leading-tight tracking-tight">
+            <h1 className="font-display text-2xl sm:text-4xl md:text-5xl font-extrabold text-on-primary leading-tight tracking-tight">
               We are Azlan — the Lion. Built in Freetown, for the world.
             </h1>
           </div>
@@ -101,7 +101,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story Section */}
-      <section className="py-unit-xl bg-background text-left transition-colors">
+      <section className="py-unit-lg md:py-unit-xl bg-background text-left transition-colors">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
           <div className="grid lg:grid-cols-12 gap-gutter items-start">
             <div className="lg:col-span-4 flex flex-col gap-unit-md mb-unit-lg lg:mb-0">
@@ -117,7 +117,7 @@ export default function AboutPage() {
             </div>
 
             <div className="lg:col-span-8 flex flex-col gap-unit-lg">
-              <div className="space-y-unit-md text-on-surface-variant font-sans text-lg leading-relaxed">
+              <div className="space-y-unit-md text-on-surface-variant font-sans text-base md:text-lg leading-relaxed">
                 <p>
                   AZLAN (SL) LIMITED was forged in the heart of Sierra Leone with a singular
                   mission: to redefine the technological landscape of West Africa. We believe that
@@ -146,14 +146,14 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-unit-xl bg-surface-container-low lion-watermark relative">
+      <section className="py-unit-lg md:py-unit-xl bg-surface-container-low lion-watermark relative">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
           <div className="mb-unit-lg text-center md:text-left">
-            <h2 className="font-display text-3xl font-extrabold text-primary">Our Core Values</h2>
-            <div className="h-1 w-24 bg-[#F5C842] mt-unit-xs"></div>
+            <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-primary">Our Core Values</h2>
+            <div className="h-1 w-24 bg-[#F5C842] mt-unit-xs mx-auto md:mx-0"></div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-gutter">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-unit-md md:gap-gutter">
             {values.map((v) => (
               <div
                 key={v.title}
@@ -173,11 +173,11 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership Team Grid */}
-      <section className="py-unit-xl bg-background text-left">
+      <section className="py-unit-lg md:py-unit-xl bg-background text-left">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-unit-xl gap-unit-md">
             <div>
-              <h2 className="font-display text-3xl font-extrabold text-primary">Leadership Team</h2>
+              <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-primary">Leadership Team</h2>
               <p className="text-on-surface-variant font-sans text-body-md max-w-xl mt-2 leading-relaxed">
                 The strategic visionaries steering Azlan toward global prominence while remaining anchored in
                 our Freetown heritage.
@@ -186,7 +186,7 @@ export default function AboutPage() {
             <div className="h-[2px] flex-grow bg-outline/10 mb-2 ml-unit-lg hidden md:block"></div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-unit-md md:gap-gutter">
             {team.map((t) => (
               <div key={t.name} className="flex flex-col group">
                 <div className="relative overflow-hidden aspect-[4/5] rounded-xl mb-unit-md">
@@ -202,7 +202,7 @@ export default function AboutPage() {
                     </span>
                   </div>
                 </div>
-                <h4 className="font-display text-lg font-bold text-on-surface">{t.name}</h4>
+                <h4 className="font-display text-sm sm:text-base md:text-lg font-bold text-on-surface">{t.name}</h4>
                 <span className="font-display text-label-caps text-secondary uppercase tracking-wider font-semibold mt-1">
                   {t.role}
                 </span>
