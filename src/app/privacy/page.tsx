@@ -68,10 +68,9 @@ export default function PrivacyPolicyPage() {
               <li><span className="font-semibold">TIN:</span> 1001812026</li>
               <li>
                 <span className="font-semibold">Privacy contact:</span>{" "}
-                <a href="mailto:privacy@azlan.sl" className="text-primary hover:text-gold-accent transition-colors underline underline-offset-2">
-                  privacy@azlan.sl
+                <a href="mailto:azlanslltd@gmail.com" className="text-primary hover:text-gold-accent transition-colors underline underline-offset-2">
+                  azlanslltd@gmail.com
                 </a>
-                {" "}<em className="text-sm text-on-surface-variant">[update if different]</em>
               </li>
             </ul>
           </PolicySection>
@@ -259,8 +258,8 @@ export default function PrivacyPolicyPage() {
             </ul>
             <p className="mt-unit-sm">
               To exercise any of these rights, contact us at{" "}
-              <a href="mailto:privacy@azlan.sl" className="text-primary underline underline-offset-2 hover:text-gold-accent transition-colors">
-                privacy@azlan.sl
+              <a href="mailto:azlanslltd@gmail.com" className="text-primary underline underline-offset-2 hover:text-gold-accent transition-colors">
+                azlanslltd@gmail.com
               </a>. We will respond within <strong>30 days</strong>.
             </p>
           </PolicySection>
@@ -270,8 +269,8 @@ export default function PrivacyPolicyPage() {
               This Site is not directed at children under the age of 18. We do not knowingly
               collect personal data from anyone under 18. If you believe a child has submitted
               data to us, please contact us immediately at{" "}
-              <a href="mailto:privacy@azlan.sl" className="text-primary underline underline-offset-2 hover:text-gold-accent transition-colors">
-                privacy@azlan.sl
+              <a href="mailto:azlanslltd@gmail.com" className="text-primary underline underline-offset-2 hover:text-gold-accent transition-colors">
+                azlanslltd@gmail.com
               </a>{" "}
               and we will delete it promptly.
             </p>
@@ -320,10 +319,11 @@ export default function PrivacyPolicyPage() {
               <p>7 Haja Nabie Street, Hill Station, Freetown, Sierra Leone</p>
               <p>
                 Email:{" "}
-                <a href="mailto:privacy@azlan.sl" className="text-primary underline underline-offset-2 hover:text-gold-accent transition-colors">
-                  privacy@azlan.sl
+                <a href="mailto:azlanslltd@gmail.com" className="text-primary underline underline-offset-2 hover:text-gold-accent transition-colors">
+                  azlanslltd@gmail.com
                 </a>
               </p>
+              <p>Phone: +232-79-331413</p>
             </div>
           </PolicySection>
 
