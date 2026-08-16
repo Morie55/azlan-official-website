@@ -25,7 +25,7 @@ export const Navbar: React.FC = () => {
       <div className="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-unit-md">
         {/* Logo Section */}
         <Link href="/" className="flex items-center gap-unit-sm focus:outline-none">
-          <Img src="/Azlan Logo.png" alt="Azlan Logo" width={120} height={36} style={{ height: "2.25rem", width: "auto" }} />
+          <Img src="/Azlan Logo.png" alt="Azlan Logo" width={120} height={36} style={{ height: "auto" }} />
           <span className="font-display text-[22px] font-extrabold text-primary tracking-tight hidden sm:inline-block">
             AZLAN <span className="text-gold-accent font-medium text-sm tracking-widest uppercase ml-1">SL</span>
           </span>
