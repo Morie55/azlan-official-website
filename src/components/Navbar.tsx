@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { AZLANLogo } from "./AZLANLogo";
+import Img from "next/image"
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ export const Navbar: React.FC = () => {
       <div className="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-unit-md">
         {/* Logo Section */}
         <Link href="/" className="flex items-center gap-unit-sm focus:outline-none">
-          <AZLANLogo className="h-9 w-auto" />
+          <Img src="/Azlan Logo.png" alt="Azlan Logo" width={120} height={36} className="h-9 w-auto" style={{ width: "auto" }} />
           <span className="font-display text-[22px] font-extrabold text-primary tracking-tight hidden sm:inline-block">
             AZLAN <span className="text-gold-accent font-medium text-sm tracking-widest uppercase ml-1">SL</span>
           </span>
@@ -37,11 +37,10 @@ export const Navbar: React.FC = () => {
             <Link
               key={link.name}
               href={link.href}
-              className={`font-sans text-[15px] font-semibold transition-all duration-200 focus:outline-none hover:text-gold-accent ${
-                isActive(link.href)
-                  ? "text-primary border-b-2 border-gold-accent pb-1"
-                  : "text-on-surface-variant"
-              }`}
+              className={`font-sans text-[15px] font-semibold transition-all duration-200 focus:outline-none hover:text-gold-accent ${isActive(link.href)
+                ? "text-primary border-b-2 border-gold-accent pb-1"
+                : "text-on-surface-variant"
+                }`}
             >
               {link.name}
             </Link>
@@ -70,11 +69,10 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer Overlay & Content */}
       <div
-        className={`md:hidden absolute top-[68px] left-0 w-full bg-surface-container/95 backdrop-blur-lg border-b border-outline/10 shadow-lg transition-all duration-300 cubic-bezier(0.4, 0, 0.2, 1) ${
-          isOpen
-            ? "opacity-100 translate-y-0 pointer-events-auto"
-            : "opacity-0 -translate-y-4 pointer-events-none"
-        }`}
+        className={`md:hidden absolute top-[68px] left-0 w-full bg-surface-container/95 backdrop-blur-lg border-b border-outline/10 shadow-lg transition-all duration-300 cubic-bezier(0.4, 0, 0.2, 1) ${isOpen
+          ? "opacity-100 translate-y-0 pointer-events-auto"
+          : "opacity-0 -translate-y-4 pointer-events-none"
+          }`}
       >
         <div className="flex flex-col gap-unit-md p-unit-lg max-w-container-max mx-auto px-margin-mobile">
           {links.map((link) => (
@@ -82,9 +80,8 @@ export const Navbar: React.FC = () => {
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className={`font-sans text-[16px] font-bold py-2 border-b border-outline/5 hover:text-gold-accent transition-colors ${
-                isActive(link.href) ? "text-primary" : "text-on-surface-variant"
-              }`}
+              className={`font-sans text-[16px] font-bold py-2 border-b border-outline/5 hover:text-gold-accent transition-colors ${isActive(link.href) ? "text-primary" : "text-on-surface-variant"
+                }`}
             >
               {link.name}
             </Link>
