@@ -66,11 +66,11 @@ export default function HomePage() {
           <div className="md:col-span-8 flex flex-col justify-center text-left">
             <div className="flex items-center gap-2 mb-unit-md">
               <span className="h-[2px] w-12 bg-gold-accent"></span>
-              <span className="font-display text-label-caps text-white uppercase tracking-widest font-semibold">
+              <span className="font-display text-label-caps text-gray-300 uppercase tracking-widest font-semibold">
                 Built in Freetown. Built for Africa.
               </span>
             </div>
-            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-600 mb-unit-lg leading-tight tracking-tight">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-unit-lg leading-tight tracking-tight">
               Sierra Leone&apos;s leading technology company —{" "}
               <span className="text-yellow-400">powering businesses</span> with
               world-class digital products.
@@ -82,13 +82,13 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row flex-wrap gap-unit-md">
               <Link
                 href="/products"
-                className="bg-primary hover:bg-primary-container text-on-primary px-unit-xl py-4 font-display font-semibold text-[14px] uppercase tracking-wider rounded-md shadow-lg active:scale-95 transition-all text-center sm:text-left"
+                className="bg-primary-container hover:bg-primary text-on-primary px-unit-xl py-4 font-display font-semibold text-[14px] uppercase tracking-wider rounded-md shadow-lg active:scale-95 transition-all text-center sm:text-left"
               >
                 Explore Our Products
               </Link>
               <Link
                 href="/contact"
-                className="border-2 border-primary/20 md:border-primary text-yellow-400 bg-primary/10 md:bg-transparent hover:bg-primary/5 px-unit-xl py-4 font-display font-semibold text-[14px] uppercase tracking-wider rounded-md active:scale-95 transition-all text-center sm:text-left"
+                className="border-2 bg-yellow-400  border-primary/20 md:border-primary text-white   hover:bg-yellow-600 px-unit-xl py-4 font-display font-semibold text-[14px] uppercase tracking-wider rounded-md active:scale-95 transition-all text-center sm:text-left"
               >
                 Get in Touch
               </Link>
@@ -110,7 +110,7 @@ export default function HomePage() {
         </div>
 
         {/* Coastal Coastal Gradiant Transition Mask */}
-        <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent"></div>
+        {/* <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent"></div> */}
       </header>
 
       {/* Scrolling Brand Ticker */}
