@@ -132,7 +132,7 @@ export default function HomePage() {
               <span className="text-yellow-400">powering businesses</span> with
               world-class digital products.
             </h1>
-            <p className="font-sans text-base md:text-lg lg:text-xl text-white mb-unit-xl max-w-2xl leading-relaxed">
+            <p className="font-sans text-base md:text-lg lg:text-xl text-gray-200 mb-unit-xl max-w-2xl leading-relaxed">
               We bridge the digital divide by creating high-performance tools specifically designed
               for the African context, ensuring resilience, speed, and local integration.
             </p>
