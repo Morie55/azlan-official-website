@@ -123,7 +123,7 @@ export default function HomePage() {
           <div className="md:col-span-8 flex flex-col justify-center text-left">
             <div className="flex items-center gap-2 mb-unit-md">
               <span className="h-[2px] w-12 bg-gold-accent"></span>
-              <span className="font-display text-label-caps text-gray-300 uppercase tracking-widest font-semibold">
+              <span className="font-display text-label-caps text-gray-500 uppercase tracking-widest font-semibold">
                 Built in Freetown. Built for Africa.
               </span>
             </div>
